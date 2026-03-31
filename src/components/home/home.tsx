@@ -12,6 +12,7 @@ import {
   IconUserCircle,
 } from '@tabler/icons-react';
 import { Group, Text, Stack, Modal } from '@mantine/core';
+import { MealPlanSchedule } from '../calendars/MealPlanSchedule';
 import classes from './NavbarSimple.module.css';
 
 const data = [
@@ -98,6 +99,7 @@ export function NavbarSimple() {
             )}
           </Stack>
         )}
+        {active === 'Plan' && <MealPlanSchedule />}
       </main>
     </div>
   );
